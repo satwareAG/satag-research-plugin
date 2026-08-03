@@ -5,3 +5,4 @@ specs/
 tests/
 AGENTS.md
 package.json
+.gitea/.gitea-tmp/
