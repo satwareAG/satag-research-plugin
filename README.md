@@ -20,8 +20,8 @@ snippet) so agents can reference sources properly.
 ## Why this plugin exists
 
 Replaces two plugins with a single unified plugin:
-- **satware(R) AI Search Pro**: replaced by `search` (sonar model)
-- **satware(R) AI Deep Research Pro**: replaced by `research` (sonar-reasoning-pro) + `deep_research` (sonar-deep-research)
+- **satware® AI Search Pro**: replaced by `search` (sonar model)
+- **satware® AI Deep Research Pro**: replaced by `research` (sonar-reasoning-pro) + `deep_research` (sonar-deep-research)
 
 The old Deep Research plugin used the **deprecated** `sonar-reasoning` model (returns
 400 error). This plugin uses `sonar-reasoning-pro` (the replacement model).
