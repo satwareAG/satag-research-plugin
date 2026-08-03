@@ -1,4 +1,4 @@
-# satware(R) AI research
+# satware® AI research
 
 A unified TypingMind plugin for web search, deep reasoning research, and exhaustive
 research using the Perplexity Sonar API. Three functions in one plugin:
