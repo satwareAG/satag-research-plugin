@@ -97,10 +97,11 @@ function buildConfig(params, userSettings, defaultModel, defaultTimeout, default
   if (!query) {
     return { error: { isError: true, error: 'query is required.' } };
   }
-  const model = (userSettings.model && userSettings.model.trim()) || defaultModel;
-  const timeout = Math.min(parseInt(userSettings.timeout, 10) || defaultTimeout, defaultTimeout);
-  const maxTokens = Math.min(parseInt(userSettings.maxTokens, 10) || defaultMaxTokens, defaultMaxTokens);
-  const temperature = Math.min(Math.max(parseFloat(userSettings.temperature) || defaultTemp, 0), 1);
+  // Per-function hardcoded defaults (not overridable by userSettings)
+  const model = defaultModel;
+  const timeout = defaultTimeout;
+  const maxTokens = defaultMaxTokens;
+  const temperature = defaultTemp;
   return { apiKey, query, model, timeout, maxTokens, temperature, error: null };
 }
 
