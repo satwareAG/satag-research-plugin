@@ -1,9 +1,9 @@
 /**
- * satware(R) AI research - TypingMind plugin
+ * satware® AI research - TypingMind plugin
  *
  * Unified Perplexity research plugin replacing:
- * - satware(R) AI Search Pro (search_via_perplexity_pro)
- * - satware(R) AI Deep Research Pro (deep_research_via_perplexity_pro)
+ * - satware® AI Search Pro (search_via_perplexity_pro)
+ * - satware® AI Deep Research Pro (deep_research_via_perplexity_pro)
  *
  * 3 functions, all synchronous, browser-native fetch():
  * - search: sonar model (quick factual, 30s timeout)
