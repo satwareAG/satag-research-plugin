@@ -35,6 +35,25 @@ The old Deep Research plugin used the **deprecated** `sonar-reasoning` model (re
 - Near-miss disclosure: "state mismatch if results are related but don't match"
 - Structured citations returned (not appended text)
 
+## Pricing
+
+This plugin uses three Perplexity Sonar models with different cost profiles.
+See the public pricing table: https://docs.perplexity.ai/docs/getting-started/pricing
+
+Key cost differences:
+
+| Function | Model | Relative cost |
+|----------|-------|---------------|
+| `search` | sonar | Cheapest ($1/$1 per 1M tokens) |
+| `research` | sonar-reasoning-pro | Mid ($2/$8 per 1M tokens) |
+| `deep_research` | sonar-deep-research | Most expensive ($2/$8 + surcharges) |
+
+`deep_research` meters internal search queries ($0.005/query), reasoning
+tokens ($3/1M), and citation tokens ($2/1M) on top of token costs. A single
+call can cost $0.50+. Use it for high-stakes research only.
+
+Rate limits: https://docs.perplexity.ai/docs/admin/rate-limits-usage-tiers
+
 ## Owner
 
 Jane Alesi (AI Architect), satware AG
